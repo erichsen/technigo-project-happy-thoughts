@@ -1,13 +1,98 @@
-:root {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  max-width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  scrollbar-gutter: stable;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.thought-card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #000;
+  box-shadow: 6px 6px 0px #000;
+}
+
+.thought-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  margin-left: auto;
+}
+
+.timestamp {
+  margin-left: auto;
+  color: #999;
+  font-size: 14px;
+}
+
+.heart-button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.heart-button--liked {
+  background-color: #ffadad;
+}
+
+.thought-form {
+  background-color: #e4e4e4;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 0px #000;
+}
+
+.thought-form p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.thought-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  resize: none;
+}
+
+.submit-button {
+  background-color: #ffadad;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .app {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
