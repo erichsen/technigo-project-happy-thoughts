@@ -1,24 +1,39 @@
 # Happy Thoughts
 
-Replace this readme with your own information about the project. You can include things like:
+A React app where you can share and like happy thoughts with the world. Think of it as a positivity-only social feed!
 
-- Brief description of the assignment
-- How you approached the task, what tools and techniques you used, and how you planned it
-- If you had more time, what would be next?
-- How to run the project locally
+## About the project
+
+Built with React and connected to a live REST API. Users can:
+- Read the 20 most recent happy thoughts
+- Post their own happy thought
+- Like thoughts with a ❤️ button
+
+New thoughts appear instantly at the top of the feed without needing to refresh the page.
+
+## Tech stack
+
+- React (Vite)
+- JavaScript (JSX)
+- CSS
+- date-fns for timestamp formatting
+- REST API: https://happy-thoughts-api-4ful.onrender.com
+
+## How I approached it
+
+I started by fetching and displaying thoughts from the API, then built the form to post new ones, and finally implemented the like button. Components are split into `ThoughtForm` and `ThoughtCard` to keep things clean and reusable.
+
+## If I had more time
+
+- Add loading states while fetching
+- Show a character counter on the form input
+- Add animations when new thoughts appear
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
+https://technigo-project-happy-thoughts.pages.dev/
 
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+## Run locally
 
 ```bash
-npm i && code . && npm run dev
-```
+npm install --legacy-peer-deps && npm run dev
