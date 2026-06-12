@@ -6,7 +6,7 @@ export const App = () => {
   const [thoughts, setThoughts] = useState([])
 
   useEffect(() => {
-    fetch('https://happy-thoughts-api-4ful.onrender.com/thoughts')
+    fetch('https://happy-thoughts-api-lni3.onrender.com/thoughts')
       .then((res) => res.json())
       .then((data) => {
         setThoughts(data)

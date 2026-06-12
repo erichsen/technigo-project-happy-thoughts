@@ -4,7 +4,7 @@ import { useState } from 'react'
 export const ThoughtCard = ({ thought }) => {
     const [hearts, setHearts] = useState(thought.hearts)
     const handleLike = () => {
-        fetch(`https://happy-thoughts-api-4ful.onrender.com/thoughts/${thought._id}/like`, {
+        fetch(`https://happy-thoughts-api-lni3.onrender.com/thoughts/${thought._id}/like`, {
             method: 'POST',
         })
             .then((res) => res.json())

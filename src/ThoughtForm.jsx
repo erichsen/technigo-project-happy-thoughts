@@ -6,7 +6,7 @@ export const ThoughtForm = ({ setThoughts }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        fetch('https://happy-thoughts-api-4ful.onrender.com/thoughts', {
+        fetch('https://happy-thoughts-api-lni3.onrender.com/thoughts', {
             method: 'POST',
             body: JSON.stringify({ message }),
             headers: { 'Content-Type': 'application/json' },
